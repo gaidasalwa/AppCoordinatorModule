@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SharedModels
+import AppModels
 
 @available(iOS 13.0, *)
 class SwiftUICoordinator: ObservableObject {
