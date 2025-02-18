@@ -8,7 +8,6 @@
 import SwiftUI
 import AppModels
 
-@available(iOS 13.0, *)
 class SwiftUICoordinator: ObservableObject {
     @Published var selectedAd: Ad?
 

@@ -14,9 +14,9 @@ public class UIKitCoordinator: ObservableObject {
     let navigationController: UINavigationController
     
     public init(navigationController: UINavigationController) {
-            self.navigationController = navigationController
-        }
-
+        self.navigationController = navigationController
+    }
+    
     @MainActor
     public func showAdDetail(ad: Ad) {
         let detailVC = AdDetailViewController(viewModel: AdDetailViewModel(useCase: AdDetailUseCase()))
