@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/gaidasalwa/AppModels.git", from: "1.0.0"),
-        .package(url: "https://github.com/gaidasalwa/AdDetailsModule.git", from: "1.1.0")
+        .package(url: "https://github.com/gaidasalwa/AdDetailsModule.git", from: "1.3.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

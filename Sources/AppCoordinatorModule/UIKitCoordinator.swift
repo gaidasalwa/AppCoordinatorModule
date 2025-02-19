@@ -19,7 +19,12 @@ public class UIKitCoordinator: ObservableObject {
     
     @MainActor
     public func showAdDetail(ad: Ad) {
-        let detailVC = AdDetailViewController(viewModel: AdDetailViewModel(useCase: AdDetailUseCase()))
+        let detailVC = AdDetailViewController(
+            viewModel: AdDetailViewModel(
+                useCase: AdDetailUseCase(),
+                adId: ad.id
+            )
+        )
         navigationController.pushViewController(detailVC, animated: true)
     }
 }
